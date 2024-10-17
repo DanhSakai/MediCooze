@@ -1,0 +1,262 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: ;
+  --body-text-font: Outfit, sans-serif;
+  --heading-text-font: Lato, serif;
+  --body-font-size: 1.1rem;
+  --btn-out-color: #ff6b01;
+  --btn-link-color: #001775;
+  --heading-color: #1f1f1f;
+  --normal-text-color: #333333;
+}
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  font-family: var(--body-text-font);
+  font-size: var(--body-font-size);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: var(--heading-text-font);
+}
+
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--body-text-font);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  width: 100%;
+  max-width: 1580px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.logo-container img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 280px;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navigation li a {
+  display: block;
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  color: #1e1e1e;
+  transition: all 0.3s ease;
+}
+
+.navigation li a:hover {
+  color: #20c1ba;
+}
+
+.navigation li a.home-link {
+  color: #20c1ba;
+}
+
+.navigation .btn-signup {
+  background-color: var(--btn-out-color);
+  color: white;
+  border: none;
+  padding: 4px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.navigation .btn-signup:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+.started-section {
+  width: 100%;
+  margin-top: 120px;
+}
+.started-container {
+  width: 100%;
+  max-width: 1580px;
+  display: flex;
+}
+
+.started-container .started-description {
+  width: 50%;
+}
+
+.started-container .started-description h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 120%;
+  color: var(--heading-color);
+}
+.started-container .started-description .hight-light {
+  color: var(--btn-out-color);
+}
+
+.started-description p {
+  color: var(--normal-text-color);
+  margin: 26px 0;
+}
+.started-description .btn-started {
+  background-color: var(--btn-link-color);
+  color: white;
+  border: none;
+  padding: 8px 28px;
+
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.started-container .doctor-description {
+  width: 50%;
+  position: relative;
+}
+.doctor-description > img {
+  position: absolute;
+  width: 420px;
+  height: auto;
+  right: 20%;
+  top: -20%;
+}
+.doctor-description .doctor-ad {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 20%;
+  left: 5%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.doctor-ad .doctor-list {
+  display: flex;
+}
+.doctor-list .more-doctor {
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--btn-link-color);
+  color: #fff;
+}
+.doctor-ad .doctor-list::before {
+  content: "200+";
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  font-family: var(--body-text-font);
+  font-weight: bold;
+}
+.doctor-ad .doctor-list img,
+.doctor-list .more-doctor {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-left: -12px;
+  border: 4px solid #20c1ba;
+}
+
+.doctor-description .contact-card {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 24px;
+}
+.contact-card img {
+  width: 80px;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+.contact-card p {
+  margin: 16px 0;
+  font-size: 1rem;
+}
+.contact-card button {
+  color: var(--btn-link-color);
+  border: 2px solid var(--btn-link-color);
+  padding: 2px 28px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.contact-card button:hover {
+  background-color: var(--btn-link-color);
+  color: #fff;
+}
