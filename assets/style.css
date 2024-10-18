@@ -317,10 +317,11 @@ nav {
   align-items: center;
 }
 
-.booking-info i {
-  width: 46px !important;
-  height: 46px;
+i.iconic {
+  min-width: 58px;
+  min-height: 58px;
   display: flex;
+  font-size: 1.4rem;
   justify-content: center;
   align-items: center;
 }
@@ -339,11 +340,6 @@ nav {
   color: #20c1ba;
   background-color: #e6f7f7;
   border-radius: 50%;
-  width: 80px !important;
-  height: 46px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .booking-form .input-field {
@@ -392,4 +388,105 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 0 4px 0 20px;
+}
+.department-section {
+  width: 100%;
+  margin-top: 120px;
+}
+
+.department-container {
+  width: 100%;
+  max-width: 1580px;
+}
+.department-container .department-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.department-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.department-heading a {
+  color: #eee;
+  padding: 10px 28px;
+  background-color: var(--btn-out-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.department-container .department-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 32px;
+  margin-top: 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+.department-list .department-item {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #20c1ba;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 28px 0;
+}
+
+.department-list .department-item:hover {
+  transform: translateY(-16px);
+}
+
+.department-item i {
+  margin-bottom: 12px;
+  font-size: 2.5rem;
+}
+
+.department-item p {
+  font-size: 1.2rem;
+  font-weight: 550;
+  margin-top: 12px;
+}
+.department-list .emergency {
+  background-color: #fff1f1;
+}
+.department-list .child {
+  background-color: #f3ffeb;
+}
+
+.department-list .gender {
+  background-color: #ecf6ff;
+}
+
+.department-list .heart {
+  background-color: #fcf7fe;
+}
+
+.department-list .neuron {
+  background-color: #f1ffff;
+}
+
+.department-list .brain {
+  background-color: #fff3fd;
+}
+.emergency i {
+  color: #f83233;
+}
+.child i {
+  color: #0a9106;
+}
+.heart i {
+  color: #9706f7;
+}
+.gender i {
+  color: #5495cd;
+}
+.neuron i {
+  color: #3ed4cb;
+}
+.brain i {
+  color: #d91af0;
 }
