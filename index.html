@@ -7,10 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="/assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/648ff81520.js"
+      crossorigin="anonymous"
+    ></script>
     <title>MediCooze - Best place to heal</title>
   </head>
   <body>
@@ -22,13 +31,13 @@
       </div>
       <div class="navigation">
         <ul>
-          <li><a class="home-link" href="">Home</a></li>
-          <li><a href="">Doctors</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">About Us</a></li>
+          <li><a class="home-link" href="">Trang chủ</a></li>
+          <li><a href="">Bác sĩ</a></li>
+          <li><a href="">Dịch vụ</a></li>
+          <li><a href="">Liên hệ</a></li>
+          <li><a href="">Về chúng tôi</a></li>
           <li>
-            <a class="btn-signup" href="">Sign Up</a>
+            <a class="btn-signup" href="">Đăng ký</a>
           </li>
         </ul>
       </div>
@@ -39,14 +48,14 @@
         <div class="started-container two-column">
           <div class="started-description">
             <h1>
-              Find The Best Doctor For Your
-              <span class="hight-light">Health Care</span>
+              Tìm Bác Sĩ Tốt Nhất Cho
+              <span class="hight-light">Sức Khỏe</span> Của Bạn
             </h1>
             <p>
-              Connect With The Right Doctor And Easily Schedule An Appointment
-              To Start Your Health Journey
+              Kết nối với bác sĩ phù hợp và dễ dàng lên lịch hẹn để bắt đầu hành
+              trình chăm sóc sức khỏe của bạn
             </p>
-            <a class="btn-started">Get started</a>
+            <a class="btn-started">Bắt đầu</a>
           </div>
           <div class="doctor-description">
             <img src="/images/doctor-top.png" alt="" />
@@ -58,19 +67,71 @@
                 <img src="/images/doctor-zara.jpg" alt="" />
                 <div class="more-doctor">+</div>
               </div>
-              <p>Expert Doctors</p>
+              <p>Bác sĩ chuyên gia</p>
             </div>
             <div class="contact-card">
               <img src="/images/doctor-ray.jpg" alt="" />
-              <h3>Dr. John Doe</h3>
-              <p>Degree Psychiatry</p>
-              <button>Contact</button>
+              <h3>TS. Hồng Hà</h3>
+              <p>Bác sĩ Phẫu thuật</p>
+              <button>Liên hệ</button>
             </div>
           </div>
         </div>
       </div>
+      <!-- BOOKING SECTION -->
+      <div class="booking-section">
+        <div class="booking-container two-column">
+          <a class="ads-banner" href=""
+            ><div>
+              <p>Tiết kiệm lớn khi mua sản phẩm y tế thiết yếu ngay hôm nay!</p>
+            </div></a
+          >
+          <div class="booking-form">
+            <form action="">
+              <div class="booking-info">
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div class="input-field">
+                    <label for="location">Địa chỉ</label>
+                    <select name="loca" id="location">
+                      <option selected disabled value="">Chọn nơi</option>
+                      <option value="Tân Phú">Tân Phú</option>
+                      <option value="Gò Vấp">Gò Vấp</option>
+                      <option value="Quận 1">Quận 1</option>
+                      <option value="hcm">Hồ Chí Minh</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="date">
+                  <i class="fa-solid fa-calendar"></i>
+                  <div class="input-field">
+                    <label for="date">Chọn ngày</label>
+                    <input data-="" type="date" name="date" id="date" />
+                  </div>
+                </div>
+                <div class="person">
+                  <i class="fa-solid fa-user"></i>
+                  <div class="input-field">
+                    <label for="person">Người khám</label>
+                    <input type="text" name="person" id="person" />
+                  </div>
+                </div>
+              </div>
+              <div class="submit-btn">
+                <button class="send-button" type="submit">Đặt lịch ngay</button>
+                <input
+                  type="checkbox"
+                  name="phone-message"
+                  id="phone-message"
+                />
+                <label for="phone-message">Gửi tin nhắn qua điện thoại</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
       <!-- DEPARTMENT SECTION  -->
-      <div class="departmant-section">
+      <div class="department-section">
         <div class="department-container">
           <div class="department"></div>
         </div>

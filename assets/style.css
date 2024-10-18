@@ -7,9 +7,9 @@
   padding: 0;
 }
 :root {
-  --primary-color: ;
-  --body-text-font: Outfit, sans-serif;
-  --heading-text-font: Lato, serif;
+  --primary-color: #3498db; /* Example color value */
+  --body-text-font: "Google Sans", sans-serif;
+  --heading-text-font: "Bricolage Grotesque", serif;
   --body-font-size: 1.1rem;
   --btn-out-color: #ff6b01;
   --btn-link-color: #001775;
@@ -20,7 +20,7 @@ html,
 body {
   height: 100%;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 img,
@@ -134,6 +134,9 @@ nav {
   color: #fff;
 }
 
+.two-column {
+  display: flex;
+}
 .started-section {
   width: 100%;
   margin-top: 120px;
@@ -141,7 +144,6 @@ nav {
 .started-container {
   width: 100%;
   max-width: 1580px;
-  display: flex;
 }
 
 .started-container .started-description {
@@ -228,8 +230,8 @@ nav {
 
 .doctor-description .contact-card {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 5%;
+  bottom: -16%;
   text-align: center;
   box-sizing: border-box;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
@@ -259,4 +261,135 @@ nav {
 .contact-card button:hover {
   background-color: var(--btn-link-color);
   color: #fff;
+}
+.booking-section {
+  width: 100%;
+  margin-top: 120px;
+}
+.booking-container {
+  width: 100%;
+  max-width: 1580px;
+}
+
+.booking-container .ads-banner {
+  width: 35%;
+  background-image: url(/images/doctor-banner.webp);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-color: #395adf;
+  background-position: bottom 0 right -28px;
+}
+.ads-banner div {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 40px;
+  color: #eee;
+}
+.ads-banner div p {
+  font-family: var(--heading-text-font);
+  font-size: 1.5rem;
+  line-height: 110%;
+}
+.booking-form {
+  width: 65%;
+  margin-left: 40px;
+  border: 2px solid #ff6b01;
+  box-sizing: border-box;
+  padding: 32px 46px;
+  border-radius: 12px;
+  font-family: var(--body-text-font), sans-serif;
+}
+
+.booking-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.booking-info .location,
+.date,
+.person {
+  display: flex;
+  align-items: center;
+}
+
+.booking-info i {
+  width: 46px !important;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location i {
+  color: #9800f4;
+  background-color: #ffe3fc;
+  border-radius: 50%;
+}
+.date i {
+  color: #ff6b01;
+  background-color: #fff3e6;
+  border-radius: 50%;
+}
+
+.person i {
+  color: #20c1ba;
+  background-color: #e6f7f7;
+  border-radius: 50%;
+  width: 80px !important;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-form .input-field {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.input-field label {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.input-field input,
+.input-field select {
+  width: 100%;
+  padding: 4px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 600;
+}
+
+.date::before,
+.person::before {
+  content: "|";
+  padding: 0 20px;
+}
+.submit-btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  align-items: center;
+}
+.submit-btn .send-button {
+  background-color: var(--btn-link-color);
+  color: white;
+  border: none;
+  padding: 8px 28px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.submit-btn input {
+  width: 40px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px 0 20px;
 }
