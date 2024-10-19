@@ -440,16 +440,16 @@ i.iconic {
   transform: translateY(-16px);
 }
 
-.department-item i {
-  margin-bottom: 12px;
-  font-size: 2.5rem;
-}
-
 .department-item p {
   font-size: 1.2rem;
   font-weight: 550;
   margin-top: 12px;
 }
+
+.department-item img {
+  max-width: 60px;
+}
+
 .department-list .emergency {
   background-color: #fff1f1;
 }
@@ -472,21 +472,4 @@ i.iconic {
 .department-list .brain {
   background-color: #fff3fd;
 }
-.emergency i {
-  color: #f83233;
-}
-.child i {
-  color: #0a9106;
-}
-.heart i {
-  color: #9706f7;
-}
-.gender i {
-  color: #5495cd;
-}
-.neuron i {
-  color: #3ed4cb;
-}
-.brain i {
-  color: #d91af0;
-}
+
