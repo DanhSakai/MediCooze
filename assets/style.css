@@ -694,3 +694,39 @@ i.iconic {
   margin-right: 32px;
   color: #eee;
 }
+
+/* CSS FOR MEDICAL SERVICES SESSION */
+
+.medical-services {
+  width: 100%;
+  margin-top: 120px;
+  max-width: 1580px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+}
+.medical-item img {
+  width: 80px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.medical-item h3 {
+  font-size: 1.5rem;
+  margin: 20px 0 32px 0;
+  font-weight: 700;
+}
+.medical-item .doctor {
+  filter: invert(11%) sepia(80%) saturate(5996%) hue-rotate(274deg)
+    brightness(118%) contrast(121%);
+  background-color: #f9d9ff;
+}
+.medical-item .support {
+  filter: invert(51%) sepia(68%) saturate(3696%) hue-rotate(359deg)
+    brightness(101%) contrast(107%);
+    background-color: #e5f8ff38;
+}
+.medical-item .team {
+  filter: invert(62%) sepia(12%) saturate(2518%) hue-rotate(71deg)
+    brightness(90%) contrast(76%);
+  background-color: #f4f2ff41;
+}
