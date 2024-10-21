@@ -699,7 +699,7 @@ i.iconic {
 
 .medical-services {
   width: 100%;
-  margin-top: 120px;
+  margin-top: 220px;
   max-width: 1580px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -723,10 +723,93 @@ i.iconic {
 .medical-item .support {
   filter: invert(51%) sepia(68%) saturate(3696%) hue-rotate(359deg)
     brightness(101%) contrast(107%);
-    background-color: #e5f8ff38;
+  background-color: #e5f8ff38;
 }
 .medical-item .team {
   filter: invert(62%) sepia(12%) saturate(2518%) hue-rotate(71deg)
     brightness(90%) contrast(76%);
   background-color: #f4f2ff41;
+}
+
+/* CSS FOR REVIEWS SECTION */
+
+.review-section {
+  width: 100%;
+  margin-top: 120px;
+  max-width: 1580px;
+}
+.review-container {
+  margin-top: 80px;
+}
+.review-section .review-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.review-heading a {
+  color: #fff;
+  padding: 18px 28px;
+  background-color: var(--btn-link-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.review-section .testimonial {
+  width: 35%;
+  border: 2px solid #c9daff;
+  padding: 40px 40px 60px 40px;
+  box-sizing: border-box;
+}
+.testimonial .testimonial-patient-info {
+  margin-top: 20px;
+  display: block;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+
+.testimonial-patient-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  float: left;
+  align-items: center;
+}
+
+.testimonial-patient-info:hover {
+  box-shadow: 5px 5px 10px #c9daff;
+  border-radius: 20px;
+}
+.review-section .reviews {
+  width: 65%;
+  box-sizing: border-box;
+  padding-left: 140px;
+  position: relative;
+  margin-top: 60px;
+}
+.review-section .review-text::before {
+  content: open-quote;
+  position: absolute;
+  color: #20c1b97c;
+  font-size: 26rem;
+  left: 0;
+  top: -55%;
+  z-index: -1;
+}
+.reviews .rating {
+  display: flex;
+  align-items: center;
+}
+.reviews h3 {
+  font-size: 2rem;
+}
+.reviews quotes {
+  font-family: var(--body-text-font);
+}
+.reviews .rating img {
+  width: 34px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin: 20px 0 54px 0;
 }
