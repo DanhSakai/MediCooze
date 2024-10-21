@@ -1,6 +1,4 @@
-Here's a GitHub README.md file based on the healthcare website design shown in the image:
 
-```markdown
 # MediCosmo - Healthcare Provider Website
 
 ![MediCosmo Logo](link_to_logo.png)
@@ -94,6 +92,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
-
-This README provides a comprehensive overview of the MediCosmo healthcare website as depicted in the image. It includes sections describing the main features, layout structure, and key elements of the design. You can further customize this README to include specific implementation details, installation instructions, or any other relevant information for your project.
