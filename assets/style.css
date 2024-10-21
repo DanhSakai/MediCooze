@@ -568,3 +568,129 @@ i.iconic {
 .facilities-grid .bed {
   background-color: #feedff;
 }
+
+/* CSSS FOR JOURNEY RECOVERY SECTION */
+
+.recovery-section {
+  width: 100%;
+  margin-top: 220px;
+}
+.recovery-container {
+  width: 100%;
+  max-width: 1580px;
+}
+.recovery-container .recovery-intro {
+  width: 50%;
+}
+.recovery-intro h2 {
+  line-height: 126%;
+}
+.recovery-intro p {
+  margin: 40px 0;
+}
+.recovery-intro a > button {
+  border: none;
+  background-color: var(--btn-link-color);
+  color: #fff;
+  padding: 16px 28px;
+  border-radius: 8px;
+}
+.recovery-container .recovery-img {
+  width: 50%;
+}
+.recovery-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recovery-img img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 40px;
+  margin-left: 40px;
+}
+
+/* CSS FOR OUR VALUE SECTION*/
+
+.value-section {
+  width: 100%;
+  margin-top: 120px;
+}
+.value-container {
+  width: 100%;
+  max-width: 1580px;
+}
+.values-heading {
+  width: 100%;
+}
+.value-description {
+  align-items: center;
+}
+.value-description .value-resource {
+  width: 70%;
+  margin-right: 40px;
+}
+.value-resource p {
+  margin: 40px 0;
+}
+.value-resource .value-number {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.value-resource .value-number p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: var(--heading-text-font);
+  margin: 0;
+}
+.value-resource .value-number span {
+  font-size: 1.2rem;
+
+  margin-top: 12px;
+  font-family: var(--body-text-font);
+}
+.value-resource .doctor-list {
+  display: flex;
+}
+
+.value-list {
+  width: 30%;
+}
+.value-list li {
+  padding: 30px 40px;
+  border: 2px solid #44ad44;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  border-radius: 20px;
+  font-family: var(--body-text-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.value-list li#compassion,
+.expert {
+  border-color: #ff6b01;
+  color: #ff6b01;
+}
+.value-list li#excellence {
+  border-color: #0074fe;
+  color: #0074fe;
+}
+.value-list li#integrity,
+.recovery {
+  border-color: #9904fe;
+  color: #9904fe;
+}
+.value-list li#respect,
+.satified {
+  border-color: #44ad44;
+  color: #44ad44;
+}
+.value-list li svg,
+.value-list li img {
+  width: 50px;
+  height: 5%;
+  margin-right: 32px;
+  color: #eee;
+}
